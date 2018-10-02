@@ -4,29 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ejercicio grilla</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Ejercicio grilla responsive</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <meta name="viewport" content="initial-scale=1 width=device-width">
+    <style>
+    body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .row {
+        clear: both;
+    }
+
+    .col-md-1, .col-md-2, .col-md-3 {
+        float: left;
+    }
+    @media (min-width: 481px) {
+        .col-md-1 {
+            width: 33.3%;
+            padding: 0 2% 0 2%;
+            box-sizing: border-box;
+        }
+
+        .col-md-2 {
+            width: 66.6%;
+            padding: 0 2% 0 2%;
+            box-sizing: border-box;
+        }
+
+        .col-md-3 {
+            width: 100%;
+            padding: 0 2% 0 2%;
+            box-sizing: border-box;
+        }
+
+    }
+
+    .img_responsive {
+        max-width: 100%;
+        margin: 40px 0 20px 0;
+    }
+
+    @media (max-width: 480px) {
+        .col-sm-1 {
+            width: 33.3%;
+            padding: 0 2% 0 2%;
+            box-sizing: border-box;
+        }
+
+        .col-sm-2 {
+            width: 66.6%;
+            padding: 0 2% 0 2%;
+            box-sizing: border-box;
+        }
+
+        .col-sm-3 {
+            width: 100%;
+            padding: 0 2% 0 2%;
+            box-sizing: border-box;
+        }
+    }
+    header {
+        background-color: #49A300;
+        height: 30vh;
+        text-align: center;
+        color: #ffffff;
+        margin: auto;
+    }
+    h1{
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 1.8em;
+        padding: 3vh;
+    }
+    p{
+        font-size: 2vh;
+    }
+
+    </style>
 </head>
 <body>
     <div class="row">
-        <header class="col-md-3">
+        <header class="col-md-3 col-sm-3">
             <h1>Hola!!<br>Este es un ejercicio de grillas </h1>
         </header>
     </div>
     <div class="row">
-        <div class="col-md-1">
+        <div class="col-md-1 col-sm-3">
             <img src="https://japonandmore.com/wp-content/uploads/2017/12/43.png" alt="" class="img_responsive">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur impedit consequatur, quam voluptatibus est, reprehenderit iusto tenetur perferendis repellendus architecto hic officiis porro rerum qui, et similique iure nesciunt totam esse voluptas eos quo. Debitis consequatur obcaecati error reiciendis asperiores, dignissimos. Illum aut reiciendis aspernatur repellat ipsum corrupti culpa non.</p>
         </div>
 
-        <div class="col-md-1">
+        <div class="col-md-1 col-sm-3">
             <img src="https://japonandmore.com/wp-content/uploads/2017/12/43.png" alt="" class="img_responsive">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur impedit consequatur, quam voluptatibus est, reprehenderit iusto tenetur perferendis repellendus architecto hic officiis porro rerum qui, et similique iure nesciunt totam esse voluptas eos quo. Debitis consequatur obcaecati error reiciendis asperiores, dignissimos. Illum aut reiciendis aspernatur repellat ipsum corrupti culpa non.</p>
         </div>
 
-        <div class="col-md-1">
+        <div class="col-md-1 col-sm-3">
             <img src="https://japonandmore.com/wp-content/uploads/2017/12/43.png" alt="" class="img_responsive">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur impedit consequatur, quam voluptatibus est, reprehenderit iusto tenetur perferendis repellendus architecto hic officiis porro rerum qui, et similique iure nesciunt totam esse voluptas eos quo. Debitis consequatur obcaecati error reiciendis asperiores, dignissimos. Illum aut reiciendis aspernatur repellat ipsum corrupti culpa non.</p>
         </div>
